@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "AppCommon"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "App Public content"
   s.homepage     = "https://github.com/kikohz/AppCommon"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
@@ -14,4 +14,6 @@ Pod::Spec.new do |s|
 
   #s.resources = "AppCommon/*.png"
   s.requires_arc = true
+  s.dependency 'Objective-LevelDB',    '~> 2.0.5'
+  s.dependency 'AutoNSCoding'
 end
