@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1760126C18F696A100948F36 /* AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1760126218F696A100948F36 /* AESCrypt.m */; };
+		1760126D18F696A100948F36 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1760126418F696A100948F36 /* NSData+Base64.m */; };
+		1760126E18F696A100948F36 /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 1760126618F696A100948F36 /* NSData+CommonCrypto.m */; };
+		1760126F18F696A100948F36 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1760126818F696A100948F36 /* NSString+Base64.m */; };
 		17BB922618F6758000430A78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17BB922518F6758000430A78 /* Foundation.framework */; };
 		17BB922818F6758000430A78 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17BB922718F6758000430A78 /* CoreGraphics.framework */; };
 		17BB922A18F6758000430A78 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17BB922918F6758000430A78 /* UIKit.framework */; };
@@ -41,6 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1760126118F696A100948F36 /* AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCrypt.h; sourceTree = "<group>"; };
+		1760126218F696A100948F36 /* AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCrypt.m; sourceTree = "<group>"; };
+		1760126318F696A100948F36 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		1760126418F696A100948F36 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		1760126518F696A100948F36 /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
+		1760126618F696A100948F36 /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
+		1760126718F696A100948F36 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		1760126818F696A100948F36 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
 		17BB922218F6758000430A78 /* AppCommon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppCommon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17BB922518F6758000430A78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		17BB922718F6758000430A78 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -103,6 +115,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1760126018F696A100948F36 /* AESCrypt */ = {
+			isa = PBXGroup;
+			children = (
+				1760126118F696A100948F36 /* AESCrypt.h */,
+				1760126218F696A100948F36 /* AESCrypt.m */,
+				1760126318F696A100948F36 /* NSData+Base64.h */,
+				1760126418F696A100948F36 /* NSData+Base64.m */,
+				1760126518F696A100948F36 /* NSData+CommonCrypto.h */,
+				1760126618F696A100948F36 /* NSData+CommonCrypto.m */,
+				1760126718F696A100948F36 /* NSString+Base64.h */,
+				1760126818F696A100948F36 /* NSString+Base64.m */,
+			);
+			path = AESCrypt;
+			sourceTree = "<group>";
+		};
 		17BB921918F6758000430A78 = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +188,7 @@
 		17BB925A18F6759B00430A78 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				1760126018F696A100948F36 /* AESCrypt */,
 				17BB925C18F675E800430A78 /* Categories */,
 				17BB926E18F675E800430A78 /* FitCGRect.h */,
 				17BB926F18F675E800430A78 /* FitCGRect.m */,
@@ -326,12 +354,16 @@
 				17BB927B18F675E800430A78 /* UIWebView+Clean.m in Sources */,
 				17BB923C18F6758000430A78 /* ViewController.m in Sources */,
 				17BB923618F6758000430A78 /* AppDelegate.m in Sources */,
+				1760126C18F696A100948F36 /* AESCrypt.m in Sources */,
 				17BB927918F675E800430A78 /* UIButton+Bootstrap.m in Sources */,
+				1760126E18F696A100948F36 /* NSData+CommonCrypto.m in Sources */,
 				17BB927818F675E800430A78 /* NSString+FontAwesome.m in Sources */,
 				17BB923218F6758000430A78 /* main.m in Sources */,
+				1760126F18F696A100948F36 /* NSString+Base64.m in Sources */,
 				17BB927618F675E800430A78 /* UIView+FrameUtils.m in Sources */,
 				17BB927518F675E800430A78 /* FrameUtils.m in Sources */,
 				17BB927D18F675E800430A78 /* XTool.m in Sources */,
+				1760126D18F696A100948F36 /* NSData+Base64.m in Sources */,
 				17BB927C18F675E800430A78 /* FitCGRect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
