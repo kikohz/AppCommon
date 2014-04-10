@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "AppCommon"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "App Public content"
   s.homepage     = "https://github.com/kikohz/AppCommon"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
